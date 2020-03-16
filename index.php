@@ -78,11 +78,11 @@ if(isset($_GET["ratingSortering"])) {
             <tr>
                 <td><?php echo $row["title"] ?></td>
                 <td><?php echo $row["rating"] ?></td>
-                <td><a href="series.php?id=<?php echo $row["id"]?>">Bekijk details</a></td>
+                <td><a href="serieOfFilm.php?id=<?php echo $row["id"]?>&media=serie">Bekijk details</a></td>
             </tr>
         <?php } ?>
         <tr>
-            <td><a href="nieuweSerie.php">Nieuwe serie</a></td>
+            <td><a href="nieuweFilmOfSerie.php?media=serie">Nieuwe serie</a></td>
             <td></td>
             <td></td>
         </tr>
@@ -103,11 +103,11 @@ if(isset($_GET["ratingSortering"])) {
         <tr>
             <td><?php echo $row["titel"] ?></td>
             <td><?php echo $row["duur"] ?></td>
-            <td><a href="films.php?id=<?php echo $row["id"]?>">Bekijk details</a></td>
+            <td><a href="serieOfFilm.php?id=<?php echo $row["id"]?>&media=film">Bekijk details</a></td>
         </tr>
     <?php } ?>
     <tr>
-        <td><a href="nieuweFilm.php">Nieuwe film</a></td>
+        <td><a href="nieuweFilmOfSerie.php?media=film">Nieuwe film</a></td>
         <td></td>
         <td></td>
     </tr>
